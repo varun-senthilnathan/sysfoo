@@ -19,7 +19,6 @@ pipeline {
       steps {
         echo 'generating artificat'
         sh 'mvn package -DskipTests'
-        archiveArtifacts 'target/*.war'
       }
     }
 
