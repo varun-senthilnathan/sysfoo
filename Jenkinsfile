@@ -1,9 +1,6 @@
 pipeline {
   agent {
-    docker {
-      image 'maven:3.6.3-jdk-11-slim'
-    }
-
+   any
   }
   stages {
     stage('build') {
@@ -28,9 +25,6 @@ pipeline {
       }
     }
 
-  }
-  tools {
-    maven 'Maven 3.6.3'
   }
   post {
     always {
